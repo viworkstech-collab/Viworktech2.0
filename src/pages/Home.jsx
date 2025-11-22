@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './Home.css'
 import {MoveRight} from "lucide-react";
@@ -62,7 +63,7 @@ const Home=()=>{
 </section>
 {/*Home page 4 part*/}
 
-    <section className="part4">  
+    <div className="part4">  
       <div className="pst4"> 
         <h2>Ready to Start Your <br/><span>Digital Journey?</span></h2>
         <p>Let's collaborate to bring your vision to life with innovative digital solutions</p>
@@ -70,11 +71,9 @@ const Home=()=>{
       <div className="ptbtn4">
         <a href="./contact"> GET IN TOUCH  </a>
         <MoveRight size={25} />
-        </div>
-
-
-    </section>
-  </div>
+      </div>
+    </div>
+   </div>
   )
 }
 export default Home
