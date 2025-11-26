@@ -52,12 +52,12 @@ export default function ValuesTeam() {
       (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            entry.target.style.setProperty("--delay", `${index * 0.25}s`);
+            entry.target.style.setProperty("--delay", `${index * 0.2}s`);
             entry.target.classList.add("show");
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     cards.forEach((card) => observer.observe(card));
