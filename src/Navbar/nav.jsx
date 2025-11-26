@@ -23,6 +23,9 @@ export default function Navbar() {
         <li><NavLink to="/about" onClick={() => setOpen(false)}>About Us</NavLink></li>
         <li><NavLink to="/portfolio" onClick={() => setOpen(false)}>Portfolio</NavLink></li>
         <li><NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink></li>
+        <li><NavLink to="/contact" onClick={() => setOpen(false)}></NavLink></li>
+        
+
         <li>
           <a className="cta" href="/contact" onClick={() => setOpen(false)}>
             GET IN TOUCH
