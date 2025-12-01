@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Send } from "lucide-react";
-import "./Contact.css"
 const Call = () => {
     const [form, setform] = useState({
         name: "",
@@ -20,11 +19,12 @@ const Call = () => {
     };
     return(
         <>
-        <div className="Contact-header">
+        <div className="contact-header">
             <h1>Get in<span>Touch</span></h1>
             <p>Ready to start your next project? We'd love to hear from you.  
         Fill out the form below or reach out directly.</p>
         </div>
+        <div className="left-column">
          <div className="contact-form-box">
         <form onSubmit={handlesubmit} className="contact-form">
          <h1>Send us a Message</h1>
@@ -46,8 +46,9 @@ const Call = () => {
          SEND MESSAGE</button>
        </div>
         </form>
+        </div>
      </div>
     </>
  );
 };
-export default Call
+export default Call;

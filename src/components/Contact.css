@@ -1,51 +1,45 @@
-.Contact-header h1{
-    text-align: center;
-    font-size: 72px;
+.contact-header{
+    width: 100%;
+    display: block;
+    margin-left: 320px;
+    animation: fadeIn 2.2s ease-in-out;
+}
+.contact-header h1{
+    font-size: 92px;
     margin-bottom: 10px;
     font-weight: 500;
-    justify-content:center;
     color: #FFFFFF;
-    margin-top: 110px;
+    text-align: center;
 }
-.Contact-header h1 span{
+.contact-header h1 span{
     color: #FFD1E7;
     display: block;
 }
-.Contact-header p{
-    font-size: 1.1rem;
-    text-align: center;
+.contact-header p{
+    font-size: 1.5rem;
     color: #AAAAAA;
-    justify-content: center;
-    font-family: sans-serif;
-}
-.Contact-container{
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 100px;
-  gap: 80px;
-  width: 90%;
-}
-.Contact-container h1{
-    font-size: 60px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 /* LEFT SIDE CARD */
+.left-column{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   width: 720px;
+   margin-top: 22px; 
+}
 .contact-form-box{
-    max-width: 650%;
+    width: 100%;
     background: #1f1f1f;
     padding: 40px;
-    border-radius: 1%;
+    border-radius: 10px;
     border: 1px solid #333;
     flex-wrap: wrap;
-    margin-left: 40px;
-    margin-top: 250px;
-    margin-bottom: -40px;
-    flex: 1;
-    height: 700px;
+    margin-left: -50px;
+    margin-top: 188px;
+    margin-bottom: 40px;
+    height: 737px;
 }
 .contact-form{
     display: inline;
@@ -56,7 +50,7 @@
     color: #FFFFFF;
     display: block;
     font-size: 20px;
-    margin-top: -35px;
+    margin-top: -8px;
 }
 .contact-form.full-width{
 grid-column: span 2;
@@ -117,28 +111,34 @@ gap: 5px;
     margin-top: -6px;
 }
 /* RIGHT SIDE CARD */
+.contact-wrapper{
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-top: 150px;
+}
+.right-column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 590px;
+    margin-top: 200px;
+
+}
 .contactinfo-card{
     background: #1f1f1f;
-    padding: 10px;
+    padding: 25px;
     border-radius: 10px;
-    width: 40%;
+    height: auto;
     border: 1px solid #333;
-    max-height: 370px;
-    display: block;
-    flex-wrap: wrap;
-    margin-bottom: 500px;
-    flex-direction: column;
-    margin-left: 111vh;
-    margin-top: -742px;
 }
 .contactinfo-title{
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 25px;
-    margin-top: 22px;
+    margin-bottom: 20px;
     color: #FFFFFF;
-    margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .contactinfo-row{
     display: flex;
@@ -159,71 +159,54 @@ gap: 5px;
     font-size: 1rem;
     color: #FFFFFF;
     margin-bottom: 15px;
-    margin-left: -65PX;
+    margin-left: -65px;
+    margin-top: 15px;
 }
 .value-phone{
     font-size: 1rem;
     color: #FFFFFF;
     margin-bottom: 15px;
     margin-left: -74PX; 
+    margin-top: 15px;
 }
 .value-location{
     font-size: 1rem;
     color: #FFFFFF;
     margin-bottom: 15px;
     margin-left: -97PX; 
-}
-.contact-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    margin-top: 40px;
-    margin: 0;
-    width: 90%;
+    margin-top: 15px;
 }
 .contactfollow-card{
     background: #1f1f1f;
-    padding: 10px;
-    border-radius: 14px;
-    width: 610px;
+    padding: 25px;
+    border-radius: 10px;
+    height: auto;
     border: 1px solid #333;
-    height: 155px;
-    display: block;
-    margin-left: 820px;
-    margin-top: -460px;
-    flex-wrap: wrap;
 }
 .contactfollow-title{
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 25px;
-    margin-top: 10px;
+    margin-bottom: 20px;
     color: #FFFFFF;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .contactbusiness-card{
-    width: 600px;
-    padding: 20px;
+    height: auto;
+    padding: 25px;
     border-radius: 10px;
-    background: #1f1f1f;
-    color: #FFFFFF;
-    font-family: sans-serif;
-    margin-top: 35px;
-    height: 188px;
-    margin-left: 820px;
     border: 1px solid #333;
+    background: #1f1f1f;
 }
 .contactbusiness-title{
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-left: 10px;
 }
 .row{
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
+    padding: 5px 0;
     font-size: 18px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -252,6 +235,12 @@ gap: 5px;
 .loaction-bg{
     background: #6a60a4;
 }
+.follow-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+}
 .follow-icon-circle{
     width: 55px;
     height: 55px;
@@ -260,30 +249,29 @@ gap: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 15px;
-    display: inline-block;
-    margin-left: 20px;
+    transition: 0.3s ease;
 }
 .follow-icon-circle .icon{
     width: 26px;
     height: 26px;
     color: #FFFFFF;
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top:3px;
+    margin-left: 2px;
 }
-@media (min-width: 1280px) {
-    .Contact-container{
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 70px;
-    }
-    .contact-form-box{
-        width: 650px;
-        max-width: 650px;
-    }
-    .contact-wrapper{
-        width: 100%;
-        flex-direction: column;
-        gap: 30px;
-    }
+.follow-icon-circle.linkedin:hover {
+background-color: #b9949f;
+transform: scale(1.1);
 }
+.follow-icon-circle.twitter:hover {
+background-color: #79729f;
+transform: scale(1.1);
+}
+.follow-icon-circle.instagram:hover {
+background-color: #a88da8;
+transform: scale(1.1);
+}
+.follow-icon-circle.github:hover {
+background-color: #737576;
+transform: scale(1.1);
+}
+
