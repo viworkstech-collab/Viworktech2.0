@@ -1,0 +1,80 @@
+/* -------- Portfolio Section Styling -------- */
+.portfolio-section {
+  background: #0f0f0f;
+  color: #ffffff;
+  text-align: center;
+  padding: 150px 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Animation trigger */
+.portfolio-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Titles */
+.portfolio-title-top {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.8s ease 0.3s;
+}
+
+.portfolio-section.show .portfolio-title-top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-title-main {
+  font-size: 80px;
+  font-weight: 1000;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #ffb8fd, #f5a7ff, #ffcae6);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Hover effect for main title */
+.portfolio-title-main:hover {
+  transform: scale(1.05);
+}
+
+/* Description */
+.portfolio-desc {
+  width: 60%;
+  margin: 20px auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #bfbfbf;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease 0.6s;
+}
+
+.portfolio-section.show .portfolio-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-title-top {
+    font-size: 45px;
+  }
+
+  .portfolio-title-main {
+    font-size: 60px;
+  }
+
+  .portfolio-desc {
+    width: 90%;
+    font-size: 16px;
+  }
+}
