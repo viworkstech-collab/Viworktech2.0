@@ -9,15 +9,16 @@ import Footer from "./Footer/footer.jsx";
 
 export default function App() {
   return (
-    <>
+    <div className="layout">
       <Navbar />
+      <main className="content" > 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
-    </>
+      </main> <Footer />
+    </div>
   );
 }

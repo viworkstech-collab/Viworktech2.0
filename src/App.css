@@ -1,5 +1,13 @@
-body{
-  background-color: #151515;
-  color: #FFD1E7;
-  font-family:'Montserrat', sans-serif;
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.layout {
+  min-height: 100vh;      /* full height of screen */
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;                /* pushes footer to bottom */
 }
