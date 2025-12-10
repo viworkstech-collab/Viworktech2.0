@@ -1,11 +1,13 @@
+import About2 from "./About2.jsx";
 import "./About.css"; // Import the CSS file
-import React, { useEffect, useRef ,useState } from "react";
+
+import React, { useEffect, useRef, useState } from "react";
 export default function StatsSection() {
   const stats = [
-    { label: "Years Experience", value: 6 ,},
-    { label: "Projects Completed", value: 245, },
-    { label: "Happy Clients", value: 155, },
-    { label: "Team Members", value: 12,},
+    { label: "Years Experience", value: 6 },
+    { label: "Projects Completed", value: 245 },
+    { label: "Happy Clients", value: 155 },
+    { label: "Team Members", value: 12 },
   ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
@@ -57,10 +59,9 @@ export default function StatsSection() {
       if (sectionRef.current) observer.unobserve(sectionRef.current);
     };
   }, [hasStarted]);
-  return(
-  <>
-
-    <div className="content-container">
+  return (
+    <>
+      <div className="content-container">
         {/* Heading */}
         <h2 id="about-heading" className="heading">
           About
@@ -78,40 +79,39 @@ export default function StatsSection() {
       </div>
 
       {/* Mission & Vision Section */}
-<section className="mission-vision-section">
-  <div className="mv-card-mv-delay-1">
-    <div className="mv-icon">🎯</div>
-    <h2 className="mv-title">Our Mission</h2>
-    <p className="mv-text">
-    To empower businesses with innovative digital solutions that drive growth and create
-    lasting impact in the digital landscape.
-    </p>
-  </div>
+      <section className="mission-vision-section">
+        <div className="mv-card-mv-delay-1">
+          <div className="mv-icon">🎯</div>
+          <h2 className="mv-title">Our Mission</h2>
+          <p className="mv-text">
+            To empower businesses with innovative digital solutions that drive
+            growth and create lasting impact in the digital landscape.
+          </p>
+        </div>
 
+        <div className="mv-card-mv-delay-2">
+          <div className="mv-icon">👁️</div>
+          <h2 className="mv-title">Our Vision</h2>
+          <p className="mv-text">
+            We envision a world where every business, regardless of size, has
+            access to world-class digital experiences that engage users and
+            deliver measurable results.
+          </p>
+        </div>
+      </section>
 
-  <div className="mv-card-mv-delay-2">
-  <div className="mv-icon">👁️</div>
-  <h2 className="mv-title">Our Vision</h2>
-  <p className="mv-text">
-  We envision a world where every business, regardless of size, has access to world-class
-  digital experiences that engage users and deliver measurable results.
-  </p>
-  </div>
-</section>
+      <section className="stats-section" ref={sectionRef}>
+        <div className="stats-container">
+          {stats.map((stat, i) => (
+            <div className="stat-card" key={i}>
+              <h2 className="stat-number">{counts[i]}</h2>
+              <p className="stat-label">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-<section className="stats-section" ref={sectionRef}>
-      <div className="stats-container">
-        {stats.map((stat, i) => (
-          <div className="stat-card" key={i}>
-            <h2 className="stat-number">{counts[i]}</h2>
-            <p className="stat-label">{stat.label}</p>
-          </div>
-        ))}
-      </div>
-    </section>
-
-
-
-  </>  
-  )
+      <About2 />
+    </>
+  );
 }

@@ -1,6 +1,4 @@
 import React from 'react'
-import ProductServicCard from '../components/productservice-card'
-import ProjectCard from '../components/projectCard'
 import './Home.css'
 import {MoveRight} from "lucide-react";
 
@@ -76,65 +74,64 @@ const serviceData= [
 
 return(
     <div className="parent">
-      <img className="bgimg" src="/bg-image.png" />
-      <div className="part1">
-        <div className="pta1">
-          <h2>Crafting Dgital<br /> <span>Excellence</span></h2>
-          <p>We are a full-service digital agency specializing in web development,<br/> mobile applications, UI/UX design, and digital marketing solutions that drive results.</p> 
-        </div>
-        <div className="ptb">
-         <div className="ptbtn-a">
-         <a href="./portfolio">VIEW OUR WORK </a>
-         <MoveRight size={25} />
-         </div>
-        <div className="ptbtn-b">
-         <a href="./contact">Get Started </a>
-         </div>
-        </div>
-      </div>
-{/*Home page 2 part*/}
-    <div className="part2">
-      <div className="pt2a">
-        <h2>Our Services</h2>
-        <p>Full-spectrum <span>digital solutions tailored to your business </span>  needs</p>
-      </div>
-      <div className="pt2b">
-        {serviceData.map((item)=>{
-          return  <ProductServicCard key={item.id}  data={item}  />
-        })}
-      </div>
-    </div>
+      <div className="part1"></div>
+      <div className="part2"></div>
 
 {/*Home page 3 part*/}
 <section>
     <div className="part3">   
         <div className="pt3a">
          <h2> Featured Projects</h2>
-         <p>Explore <span> our latest work and success</span> stories</p>
+         <p>Explore our latest work and success stories</p>
         </div>
         <div className="pt3b"> 
           {/* Home page 3 part Card Sections */}
-          {projectData.map((pData)=>(
-          <ProjectCard  
-          key = {pData.id}
-          img ={pData.image}
-          projectTitle={pData.projectTitle}
-          projectDesc={pData.projectDesc}
-          tags={pData.tags}
-          />
-          ))}
+          <div className='ptcard'>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUDX8bByxyAT642EGFsYTBWFWArt76KNy0A&s" />
+            <h3>Fintech banking app</h3>
+            <p> scable online makerting place with real inventroy management and seamless checkout experience</p>
+            <div className="pt3tags">
+              <h4>Mobile App</h4>
+              <h4>UI/UX Design</h4>
+            </div>
+          </div>
+          <div className='ptcard'>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUDX8bByxyAT642EGFsYTBWFWArt76KNy0A&s" />
+            <h3>Fintech banking app</h3>
+            <p> scable online makerting place with real inventroy management and seamless checkout experience</p>
+            <div className="pt3tags">
+              <h4>Mobile App</h4>
+              <h4>UI/UX Design</h4>
+            </div>
+          </div>
+          <div className='ptcard'>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUDX8bByxyAT642EGFsYTBWFWArt76KNy0A&s" />
+            <h3>Fintech banking app</h3>
+            <p> scable online makerting place with real inventroy management and seamless checkout experience</p>
+            <div className="pt3tags">
+              <h4>Mobile App</h4>
+              <h4>UI/UX Design</h4>
+            </div>
+          </div>
+          <div className='ptcard'>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUDX8bByxyAT642EGFsYTBWFWArt76KNy0A&s" />
+            <h3>Fintech banking app</h3>
+            <p> scable online makerting place with real inventroy management and seamless checkout experience</p>
+            <div className="pt3tags">
+              <h4>Mobile App</h4>
+              <h4>UI/UX Design</h4>
+            </div>
+          </div>
         </div>
-{/*Home Page 3 Part Button*/}
         <div className='ptcabtn'>
         <a href="./portfolio">VIEW All PROJECTS</a>
         <MoveRight size={25} />
         </div>
     </div>
 </section>
-
-
 {/*Home page 4 part*/}
-    <div className="part4">  
+
+    <section className="part4">  
       <div className="pst4"> 
         <h2>Ready to Start Your <br/><span>Digital Journey?</span></h2>
         <p>Let's collaborate to bring your vision to life with innovative digital solutions</p>
@@ -142,9 +139,11 @@ return(
       <div className="ptbtn4">
         <a href="./contact"> GET IN TOUCH  </a>
         <MoveRight size={25} />
-      </div>
-    </div>
-   </div>
+        </div>
+
+
+    </section>
+  </div>
   )
 }
 export default Home

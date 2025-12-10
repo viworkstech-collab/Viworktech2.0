@@ -1,0 +1,154 @@
+
+body {
+  background-color: #111;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/*VALUES WRAPPER*/
+.values-wrapper {
+  padding: 9vh 2% 6vh;
+  text-align: center;
+  animation: fadeIn 2.2s ease-in-out;
+  margin-top: 3%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADINGS */
+.section-title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  color: #f5b6d6;
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  margin: 1rem 0 3rem;
+  color: #cfcfcf;
+}
+.team-section img {
+  width: 100px;
+}
+
+/* VALUES GRID (Equal size cards) */
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.value-card {
+  background: #1c1c1c;
+  border-radius: 0.875rem;
+  border: 1px solid #333;
+  padding: 2rem;
+  text-align: left;
+  cursor: pointer;
+  width: 250px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: scale(0.85);
+transition: opacity 1s ease-out var(--delay, 0s),
+  transform 1s cubic-bezier(0.25, 1.25, 0.5, 1) var(--delay, 0s),
+  border-color 1s ease, box-shadow 1s ease;
+
+}
+
+/* Scroll animation triggered by JS */
+.value-card.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Hover effect */
+.value-card:hover {
+  transform: translateY(-12px) scale(1);
+  border-color: rgba(255, 105, 180, 0.7);
+  box-shadow: 0 12px 32px rgba(248, 150, 219, 0.55);
+}
+
+/* TEAM SECTION */
+.team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 12vh;
+}
+
+.team-img {
+  width: min(450px, 100%);
+  border-radius: 0.875rem;
+}
+
+.team-text {
+  max-width: 530px;
+  text-align: left;
+}
+
+.team-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #f5b6d6;
+}
+
+.team-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #cfcfcf;
+  margin-bottom: 0.75rem;
+}
+
+/*MOBILE RESPONSIVE*/
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  .values-grid {
+    gap: 1.25rem;
+  }
+
+  .team-section {
+    text-align: center;
+  }
+  .team-text {
+    text-align: center;
+  }
+  .team-title {
+    font-size: 2.5rem;
+  }
+  .team-desc {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-title {
+    font-size: 6rem;
+  }
+  .team-title {
+    font-size: 5rem;
+  }
+}

@@ -5,6 +5,7 @@ import About from "./pages/About.jsx";
 import Portfolio from "./pages/portfolio.jsx";
 import Contact from "./pages/contact.jsx";
 import "./App.css";
+import Footer from "./Footer/footer.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
