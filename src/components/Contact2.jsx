@@ -1,10 +1,10 @@
 import React from "react";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Github } from "lucide-react";
-import "./Contact.css"
 const Info = () => { 
     return (
     <>
         <div className="contact-wrapper">
+        <div className="right-column">
         <div className="contactinfo-card">
             <h2 className="contactinfo-title">Contact Information</h2>
             <div className="contactinfo-row">
@@ -29,24 +29,33 @@ const Info = () => {
                 <p className="value-location">Bengaluru, Karnataka</p>
             </div>
         </div>
-        </div>
+        {/* FOLLOW US */}
         <div className="contactfollow-card">
             <h2 className="contactfollow-title">Follow Us</h2>
             <div className="follow-icon">
-             <div className="follow-icon-circle"> 
+                <a href="......" target="-blank" rel="noopener noreferrer">
+             <div className="follow-icon-circle linkedin"> 
             <Linkedin className="icon" />
         </div>
-        <div className="follow-icon-circle">
+        </a>
+        <a href="....." target="_blank" rel="noopener noreferrer">
+        <div className="follow-icon-circle twitter">
             <Twitter className="icon" />
         </div>
-        <div className="follow-icon-circle">
+        </a>
+        <a href="....." target="_blank" rel="noopener noreferrer">
+        <div className="follow-icon-circle instagram">
             <Instagram className="icon" />
         </div>
-        <div className="follow-icon-circle">
+        </a>
+        <a href="....." target="_blank" rel="noopener noreferrer">
+        <div className="follow-icon-circle github">
             <Github className="icon" />
         </div>
+        </a>
       </div>   
     </div>
+    {/* BUSINESS HOURS */}
         <div className="contactbusiness-card">
             <h2 className="contactbusiness-title">Business Hours</h2>
             <div className="row">
@@ -62,7 +71,9 @@ const Info = () => {
                 <span>Closed</span>
             </div>
         </div>
+     </div>
+ </div>
          </> 
     );
 };
-export default Info
+export default Info;
