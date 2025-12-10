@@ -34,9 +34,9 @@ const projectData =[
   },
   {
     id: 4,
-    image: "https://plus.unsplash.com/premium_vector-1746986943200-d519e35e50c0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzdGF1cmFudCUyMG9yZGVyaW5nJTIwc3lzdGVtfGVufDB8fDB8fHww",
-    projectTitle: "Restaurant Order System",
-    projectDesc:"Complete digita ordering platform with menu management, live order updates and customer feedback.",
+    image: "https://plus.unsplash.com/premium_vector-1683133351746-b5f67a85d2cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvc3BpdGFsfGVufDB8fDB8fHww",
+    projectTitle: "Hospital Appointment System",
+    projectDesc: "End-to-end medical booking app with doctor scheduling, patient records, reminders and secure access.",
     tags: ["Industry-Level", "Web App"]
   }
 ];
