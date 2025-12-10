@@ -117,6 +117,7 @@
     
 }
 .pst4 h2{
+    font-size: clamp(1.2rem, 2.5vw, 2.2rem);
     font-size:4.6rem;
     font-weight: 800;
     letter-spacing: -.02em;
@@ -125,6 +126,7 @@
 }
 .pst4 h2 span{
     color:#ffd1e7;
+      font-size: clamp(1.2rem, 2.5vw, 2.2rem);
 }
 .pst4 p{
     color:#b6b2b2eb;
@@ -170,6 +172,26 @@
 
 
 @media (max-width: 748px){ 
+
+/* part 1 styling */
+/* part 2 styling */
+.prodCard{
+    width:90%;
+    height:auto;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+
+.prodCard:hover{
+ transform: translateY(-5px) scale(1.03);
+ box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4); /* pink shadow */
+}
+ /* part 3 styling */
+
+    .pt3b{
+     width:93%;
+     place-items: center;
+     padding-left:20px;
     .pt3b{
         padding:20px;
         align-items:center;

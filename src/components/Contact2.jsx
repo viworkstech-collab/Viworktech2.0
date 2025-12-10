@@ -17,7 +17,7 @@ const Info = () => {
             <div className="contactinfo-row">
                 <div className="icon-bg phone-bg">
                 <Phone className="icon" />
-                </div>
+            </div>
                 <p className="label">PHONE</p>
                 <p className="value-phone">+1 (555) 123-4567</p>
             </div>
